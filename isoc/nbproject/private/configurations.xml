@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="89">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="isoc">
+      <df name="m4">
+      </df>
+      <df name="src">
+        <df name="linux">
+          <in>md.h</in>
+        </df>
+        <df name="solaris">
+          <in>md.h</in>
+        </df>
+        <df name="win32">
+          <in>md.h</in>
+        </df>
+        <in>alloc.cpp</in>
+        <in>compare.cpp</in>
+        <in>compare.h</in>
+        <in>connectivity.h</in>
+        <in>debug.h</in>
+        <in>device.cpp</in>
+        <in>env.h</in>
+        <in>equate.cpp</in>
+        <in>event.cpp</in>
+        <in>exception.cpp</in>
+        <in>graph.h</in>
+        <in>hash.cpp</in>
+        <in>jni.cpp</in>
+        <in>match.cpp</in>
+        <in>neighbors.cpp</in>
+        <in>net.cpp</in>
+        <in>primes.h</in>
+        <in>print.cpp</in>
+        <in>protos.h</in>
+        <in>queue.cpp</in>
+        <in>queue.h</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+            <option name="debug_command"
+                    value="/usr/java/current/bin/java -cp target/iso-1.0.jar -Djava.library.path=isoc/src/.libs  com.uwemeding.connectivity.Main"/>
+            <option name="debug_dir" value="/home/uwe/Software/iso"/>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

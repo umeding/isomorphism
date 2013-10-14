@@ -1,0 +1,14 @@
+ISOC
+
+This is the Java/JNI code for the isomorphism code.
+
+
+1. JAVA_HOME
+   The path for Java is derived from the environment. If you don't
+   have JAVA_HOME set,  use the --with-java=... option while
+   configuring
+
+
+2. Debug
+   To enable debugging symbols use the --enable-debug option
+
